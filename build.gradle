@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+repositories { mavenCentral() }
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.11.4'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+test { useJUnitPlatform() }
+application { mainClass = 'benchmark.Benchmark' }
+run { maxHeapSize = '2g' }
+
+tasks.register('demo', JavaExec) {
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'benchmark.Demo'
+}
