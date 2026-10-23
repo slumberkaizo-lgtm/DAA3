@@ -45,7 +45,6 @@ public class MST {
         List<Edge> tree = new ArrayList<>();
         long weight = 0;
         int components = 0;
-        // Starting again at each unvisited vertex also handles a forest.
         for (int start = 0; start < g.size(); start++) {
             if (visited[start]) continue;
             components++;

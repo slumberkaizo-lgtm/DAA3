@@ -1,4 +1,3 @@
-"""Run from the project root: python scripts/plots.py."""
 import csv
 import math
 from pathlib import Path

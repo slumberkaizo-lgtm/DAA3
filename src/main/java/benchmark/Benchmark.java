@@ -12,7 +12,6 @@ import java.util.function.ToLongFunction;
 
 public class Benchmark {
     private static final int[] SIZES = {1000, 3162, 10000, 31623, 100000};
-    // Rows are ordered by size, sparse then dense, exactly as in the assignment.
     private static final long[][] REFERENCES = {
         {147970, 27, 396274}, {30363, 1, 252411},
         {468911, 137, 1271911}, {97589, 1, 723157},
@@ -58,7 +57,6 @@ public class Benchmark {
 
     public static void main(String[] args) throws Exception {
         Files.createDirectories(Path.of("results"));
-        // Replace the final CSV only after every graph passes its checks.
         Path temporary = Path.of("results/results.csv.tmp");
         try (PrintWriter csv = new PrintWriter(Files.newBufferedWriter(temporary))) {
             csv.println("algorithm,graph,n,m,time_ms,dsu_ops,edge_scans,comparisons,max_depth,result");

@@ -27,7 +27,6 @@ public class DSU {
         metrics.findCalls++;
         int root = x;
         while (parent[root] != root) root = parent[root];
-        // A second walk points every visited vertex directly at the root.
         while (parent[x] != x) {
             int next = parent[x];
             parent[x] = root;

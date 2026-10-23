@@ -21,7 +21,6 @@ public class DagShortestPath {
     }
 
     public static Result run(Graph g, Metrics metrics) {
-        // Kahn is part of the running time, but its scans have their own metric.
         int[] order = Kahn.order(g, new Metrics());
         return relax(g, order, metrics);
     }

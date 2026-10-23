@@ -63,7 +63,6 @@ class AlgorithmsTest {
             long best = Long.MAX_VALUE;
             for (int mask = 0; mask < (1 << g.edges().size()); mask++) {
                 if (Integer.bitCount(mask) != 4) continue;
-                // Independent reachability check for each candidate tree.
                 Graph candidate = new Graph(5, false);
                 long weight = 0;
                 for (int i = 0; i < g.edges().size(); i++) if ((mask & (1 << i)) != 0) {
