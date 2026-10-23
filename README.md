@@ -54,7 +54,6 @@ Java and JUnit do not depend on Python. Committed PNGs can be viewed without it.
 - `metrics/Metrics.java`: counters updated during actual algorithm operations.
 - `benchmark/`: seeded generator, benchmark and small console demo.
 - `REPORT.md`: complexity, measured results, correctness and algorithm selection.
-- `DEFENSE_RU.md`: short explanation and practice questions in Russian.
 
 Java files live in `src/main/java/`; JUnit tests are in `src/test/java/`.
 No graph library or framework is used. `ArrayList`, sorting, queues and heaps are
