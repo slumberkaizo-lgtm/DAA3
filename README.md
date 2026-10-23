@@ -76,16 +76,3 @@ Vertices are `0..n-1`. Undirected edges are stored once in the edge list and twi
 in adjacency lists. Self-loops and parallel edges are allowed. Weights are `int`;
 tree totals and distances use `long` to prevent accumulated integer overflow.
 MST rejects directed input. Kahn and DAG paths report an exception for cycles.
-
-## Submission
-
-The release is `main`, tag `v1.0`. Submit a ZIP named
-`DAA_Assignment3_name_surname_group.zip`, replacing the placeholders with your
-details, and include the repository link. Generated `build/` and `.gradle/` folders
-are not needed. The assignment's detailed benchmark specification requests ten
-size/density combinations and 50 CSV rows; that is the interpretation used here.
-
-## AI-use acknowledgement
-
-OpenAI Codex assisted with implementation, tests, benchmark execution and
-documentation. This assistance is disclosed as required by the assignment.
