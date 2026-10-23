@@ -1,0 +1,11 @@
+algorithm,density,scan_slope,operation_slope,min_normalized,max_normalized
+Kruskal,sparse,1.0550,1.0537,0.7447,0.9069
+Kruskal,dense,1.1194,1.0219,0.6662,0.9027
+Prim,sparse,1.0000,1.1007,1.8291,1.9344
+Prim,dense,1.0000,1.0850,1.8248,1.8896
+Kosaraju,sparse,1.0000,1.0000,1.6000,1.6000
+Kosaraju,dense,1.0000,1.0000,1.9048,1.9048
+Kahn,sparse,1.0000,1.0000,0.8000,0.8000
+Kahn,dense,1.0000,1.0000,0.9524,0.9524
+DagShortestPath,sparse,1.0000,1.0000,0.8000,0.8000
+DagShortestPath,dense,1.0000,1.0000,0.9524,0.9524
